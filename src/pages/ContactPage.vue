@@ -11,11 +11,8 @@
             <div class="mt-12 p-4 lg:p-12 gap-8 lg:flex bg-gold ">
                 <div class="px-4 text-[#222] text-left w-full lg:w-1/4 mb-5">
                     <div class="font-semibold text-2xl">Contact Info</div>
-                    <div class="font-bold text-[15px] mt-3">Amazing Company, Inc.</div>
-                    <div class="leading-7 mt-3">12345 NewYork, Street 125
-                        United States 94107
-                        P: (123) 456-7890
-                    </div>
+                    <div class="font-bold text-[15px] mt-3">Company name Petaclinics.uz.</div>
+                    <div class="leading-7 mt-3">If you have any questions, write to the admin</div>
                 </div>
                 <form class="lg:grow px-4 flex flex-col gap-4" @submit.prevent="send">
                     <textarea

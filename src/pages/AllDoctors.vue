@@ -16,7 +16,8 @@
                 >
                     <router-link :to="'/doctor/' + doctor.id">
                         <div class="w-full sm:h-40 md:h-52 overflow-hidden">
-                            <img :src="url + doctor.user.image.contentUrl" alt="doctor" class="object-cover w-full">
+                            <img :src="url + doctor.user.image.contentUrl" alt="doctor" class="object-cover w-full" v-if="doctor.user.image">
+                            <img src="/public/belijhalat.jpg" alt="doctor" class="object-cover w-full" v-else>
                         </div>
                         <div class="flex flex-col gap-5 p-5 bg-[#222222] text-[#BBBBBB]">
                             <div class="text-2xl font-semibold">{{ doctor.user.userName }}</div>

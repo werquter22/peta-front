@@ -5,7 +5,8 @@
     <div v-if="!isLoading" class="container mx-auto lg:px-20 px-4 my-10">
         <div class="col-span-1 translate-x-0 translate-y-0 opacity-100 transition-all duration-500 group mx-auto">
             <div class="w-full md:w-96 overflow-hidden">
-                <img :src="url + doctor.user.image.contentUrl" alt="doctor" class="object-cover w-full">
+                <img :src="url + doctor.user.image.contentUrl" alt="doctor" class="object-cover w-full" v-if="doctor.user.image">
+                <img src="/public/belijhalat.jpg" alt="doctor" class="object-cover w-full" v-else>
             </div>
         </div>
         <p v-intersection-observer="updateTextAnimation"
