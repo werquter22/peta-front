@@ -1,0 +1,40 @@
+{
+  "name": "peta-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@vee-validate/yup": "^4.12.6",
+    "@vueuse/components": "^10.9.0",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "gsap": "^3.12.5",
+    "imask": "^7.6.0",
+    "vee-validate": "^4.12.6",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.11.0",
+    "vue-router": "^4.3.0",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vuex": "^4.1.0",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "prettier": "3.2.5",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  }
+}
