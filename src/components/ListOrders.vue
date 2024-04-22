@@ -4,6 +4,7 @@
             <thead>
                 <tr class="text-left text-black">
                     <th class="w-fit text-nowrap px-2 h-14">#</th>
+                    <th class="w-fit text-nowrap px-2 h-14">{{ $t('id') }}</th>
                     <th class="w-fit text-nowrap px-2 h-14">{{ $t('customer') }}</th>
                     <th class="w-fit text-nowrap px-2 h-14">{{ $t('doctor') }}</th>
                     <th class="w-fit text-nowrap px-2 h-14">{{ $t('service') }}</th>
@@ -23,6 +24,7 @@
                     :class="{'bg-[#F5F5F5]': order.status === 1, 'bg-red-100': order.status === 2}"
                 >
                     <td class="w-fit text-nowrap px-2 h-14">{{ index + 1 }}</td>
+                    <td class="w-fit text-nowrap px-2 h-14">{{ order.id }}</td>
                     <td class="w-fit text-nowrap px-2 h-14">{{ order.createdBy.userName }}</td>
                     <td class="w-fit text-nowrap px-2 h-14">{{ order.employee.user.userName }}</td>
                     <td class="w-fit text-nowrap px-2 h-14">{{ order.employee.service.name }}</td>
@@ -65,6 +67,10 @@
                         <div class="flex justify-between items-center h-12 py-1">
                             <p class="text-black">{{ index + 1 }}</p>
                         </div>
+                    </div>
+                    <div class="flex justify-between items-center h-12 py-1">
+                        <p class="font-semibold text-black">{{ $t('id') }}</p>
+                        <p class="text-black">{{ order.id }}</p>
                     </div>
                     <div class="flex justify-between items-center h-12 py-1">
                         <p class="font-semibold text-black">{{ $t('customer') }}</p>
